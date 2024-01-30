@@ -1,0 +1,155 @@
+
+/* navbar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 2.3vmin;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links li a{
+  color: rgb(13, 0, 194);
+}
+
+.nav-links li a:hover{
+  color: rgb(238, 5, 5);
+}
+
+
+/* header image avion */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/avion.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 180px;
+    color: rgb(228, 180, 174);
+    text-align: center;
+}
+
+
+.header-content h1
+ {
+    opacity: 0;
+    transform: translateY(-400px);
+    animation: dropAnimation 5s ease forwards;
+    font-size: 7vmin;
+    margin: 20px auto;
+}
+
+@keyframes dropAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media only screen and (max-width:850px){
+
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+        font-size: 3vmin;
+    }
+    .logo {
+        position: absolute;
+        top: 0px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+       margin-top: -920px;
+       transition:  all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        height: 30vh;
+    }
+    .nav-links li {
+            margin: 30px auto;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        height: 40vh;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+}
+
+.header-content {
+    margin-bottom: 150px;
+}
+
+
+}
+
+
+
+
+  

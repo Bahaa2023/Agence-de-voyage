@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <img src="images/logo.png" alt="" class="logo">
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">A propos de Nous</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="images/burger-menu.png" alt="burger menu" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">  
+            <h1>Explorons Le monde ensemble!</h1>
+            <p>"Le plus beau voyage, c'est celui qu'on n'a pas encore fait."<br><br> - Loïck Peyron</p>
+        </div>
+       </header>
+
+
+       
+
+
+       <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+   </script>
+</body>
+</html>

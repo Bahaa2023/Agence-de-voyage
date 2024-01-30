@@ -1,0 +1,284 @@
+
+
+
+/* header image avion */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/avion.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 180px;
+    color: rgb(228, 180, 174);
+    text-align: center;
+}
+
+
+.header-content h1
+ {
+    opacity: 0;
+    transform: translateY(-400px);
+    animation: dropAnimation 5s ease forwards;
+    font-size: 7vmin;
+    margin: 20px auto;
+}
+
+@keyframes dropAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media only screen and (max-width:850px){
+
+.header-content {
+    margin-bottom: 150px;
+}
+
+}
+
+
+
+
+/* destinations */
+
+.index-destinations h2 {
+    font: bold 40px/85px 'Satisfy', sans-serif;
+    color: #213160;
+    text-align: center;
+    padding: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 30px;
+  }
+  
+  .index-destinations h3 {
+    color: #213160;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3vmin;
+  }
+  
+  .index-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;
+  }
+  
+  .index-destinations-box {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .index-destinations-box img {
+    width: 80%; 
+  }
+  
+
+/* HÔTELS RECOMMANDÉS section */
+
+.index-hotels  {
+    width: 100%;
+    padding: 5px 0;
+    background-color:var(--main-text);
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.index-hotels h2 {
+  font: bold 40px/85px 'Satisfy', sans-serif;
+  color: #213160;
+  text-align: center;
+  padding: 40px 0;
+  flex-basis: 100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 25px;
+}
+
+
+ .index-hotels-ville  {
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.index-hotels-ville:nth-child(2)  {
+    background-image:url(../images/Hotel\ Touraine\ Opera.jpg)
+}
+.index-hotels-ville:nth-child(3)  {
+    background-image:url(../images/Cove\ Landmark\ Pinnacle.jpg)
+}
+.index-hotels-ville:nth-child(4)  {
+    background-image:url(../images/Elegantia\ Luxury\ Rooms.jpg)
+}
+.index-hotels-ville:nth-child(5)  {
+    background-image:url(../images/Hotel\ Edison\ Times\ Square.jpg)
+}
+.index-hotels-ville:nth-child(6)  {
+    background-image:url(../images/Baansuanprannok\ Hotel.jpg)
+}
+.index-hotels-ville:nth-child(7)  {
+    background-image:url(../images/Four-Seasons-Hotel-Sydney.jpg)
+}
+
+.grey-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #4d4848;
+    opacity: 0.6;
+    transition: all ease-in-out 0.2s;
+}
+
+.index-hotels-ville:hover .grey-overlay{
+  opacity: 0;   
+}
+
+.index-hotels-ville h3 {
+font-size: 4vmin;
+  color: #fdfbfb;
+  text-align: center;
+  z-index: 100;
+  transition: all ease-in-out 0.6s;
+}
+
+
+.index-hotels-ville:hover h3 {
+    opacity: 0;
+}
+
+
+/* Avis clients  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.feedback {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+
+  .container h2  {
+    font: bold 40px/85px 'Satisfy', sans-serif;
+    color: #213160;
+    text-align: center;
+    padding: 40px 0;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 25px;
+  }
+
+.feedback img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+.feedback h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feedback p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+/* Responsive Styling */
+
+  @media only screen and (max-width: 1024px) and (max-height: 1366px),
+         only screen and (max-width: 912px) and (max-height: 1368px),
+         only screen and (max-width: 820px) and (max-height: 1180px),
+         only screen and (max-width: 768px),
+         only screen and (max-width: 480px) {
+    .index-destinations-box {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    
+    .index-destinations-box img {
+        width: 95%; 
+    }
+  
+    .index-destinations h2 {
+      font-size: 4vmin;
+      letter-spacing: 3px;
+      line-height: 40px;
+      padding-bottom: 20px;
+    }
+
+    .index-hotels h2 {
+        font-size: 4vmin;
+        margin: 25px auto;
+        padding: 0px;
+    }
+    .container h2  {
+        font-size: 4vmin;
+        margin: 25px auto;
+        padding: 0px;
+    }
+
+    .index-hotels-ville h3 {
+        font-size: 4vmin;
+        margin: 0px;
+        padding: 0px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .index-destinations-box {
+        flex-basis: calc(100% - 10px);
+    }
+    .index-destinations-box img {
+      width: 100%;
+  }
+
+  .index-hotels {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .index-hotels-ville h3 {
+    font-size: 6vmin;
+}
+  }
+  
