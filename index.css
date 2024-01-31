@@ -252,9 +252,11 @@ font-size: 4vmin;
     }
     
     .index-destinations-box img {
-        width: 95%; 
+        width: 94%; 
     }
-  
+    .index-destinations-box img:hover {
+      width: 98%; 
+  }
     .index-destinations h2 {
       font-size: 4vmin;
       letter-spacing: 3px;
