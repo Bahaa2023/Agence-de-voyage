@@ -15,12 +15,16 @@ header {
 }
 
 .header-content {
-    margin-bottom: 180px;
+    margin-bottom: 55px;
     color: rgb(228, 180, 174);
     text-align: center;
+    font-size: 3vmin;
+    font-weight: bold;
 }
 
-
+.header-content  p{ 
+  color: rgb(255, 226, 145); 
+}
 .header-content h1
  {
     opacity: 0;
@@ -28,6 +32,7 @@ header {
     animation: dropAnimation 5s ease forwards;
     font-size: 7vmin;
     margin: 20px auto;
+
 }
 
 @keyframes dropAnimation {
@@ -43,7 +48,8 @@ header {
 @media only screen and (max-width:850px){
 
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 45px;
+    font-size: 3.5vmin;
 }
 
 }
@@ -71,6 +77,10 @@ header {
     font-weight: bold;
     font-size: 3vmin;
   }
+
+  .index-destinations a:hover {
+   text-decoration: none;
+  }
   
   .index-destinations {
     display: flex;
@@ -87,6 +97,12 @@ header {
   .index-destinations-box img {
     width: 80%; 
   }
+
+  .index-destinations-box img:hover {
+    width: 83%; 
+    transition: 0.3s ease-in-out;
+  }
+  
   
 
 /* HÔTELS RECOMMANDÉS section */

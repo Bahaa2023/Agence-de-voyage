@@ -7,12 +7,12 @@
   .nav-links li a{
     color:white;
     font-weight: bold;
-    font-size: 2.8vmin;
+    font-size: 2.3vmin;
    
   }
   .nav-links li a:hover{
     color:  white;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     font-weight: bolder;
     transition: 0.4s ease ;
 }
