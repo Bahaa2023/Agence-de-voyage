@@ -5,13 +5,13 @@
 
 
   .nav-links li a{
-    color:white;
+    color:var(--contact-navlinks);
     font-weight: bold;
     font-size: 2.3vmin;
    
   }
   .nav-links li a:hover{
-    color:  white;
+    color:var(--contact-navlinks);
     font-size: 2.5vmin;
     font-weight: bolder;
     transition: 0.4s ease ;
@@ -52,7 +52,7 @@ textarea {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
     font-size: 18px; /* Adjusted font size for responsiveness */
     padding: 10px; /* Adjusted padding for responsiveness */
     transition: all 0.3s;

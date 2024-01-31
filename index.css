@@ -1,6 +1,3 @@
-
-
-
 /* header image avion */
 
 header {
@@ -16,15 +13,16 @@ header {
 
 .header-content {
     margin-bottom: 55px;
-    color: rgb(228, 180, 174);
+    color: var( --header-content);
     text-align: center;
     font-size: 3vmin;
     font-weight: bold;
 }
 
 .header-content  p{ 
-  color: rgb(255, 226, 145); 
+  color: var( --quote); 
 }
+
 .header-content h1
  {
     opacity: 0;
@@ -43,8 +41,6 @@ header {
 }
 
 
-
-
 @media only screen and (max-width:850px){
 
 .header-content {
@@ -54,14 +50,11 @@ header {
 
 }
 
-
-
-
 /* destinations */
 
 .index-destinations h2 {
     font: bold 40px/85px 'Satisfy', sans-serif;
-    color: #213160;
+    color:var(--index-destinations);
     text-align: center;
     padding: 40px;
     flex-basis: 100%;
@@ -71,7 +64,7 @@ header {
   }
   
   .index-destinations h3 {
-    color: #213160;
+    color:var(--index-destinations);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -110,7 +103,6 @@ header {
 .index-hotels  {
     width: 100%;
     padding: 5px 0;
-    background-color:var(--main-text);
     display: flex;
     justify-content: center;
     column-gap: 10px;
@@ -119,7 +111,7 @@ header {
 
 .index-hotels h2 {
   font: bold 40px/85px 'Satisfy', sans-serif;
-  color: #213160;
+  color:var(--index-destinations);
   text-align: center;
   padding: 40px 0;
   flex-basis: 100%;
@@ -163,7 +155,7 @@ header {
 .grey-overlay {
     position: absolute;
     inset: 0;
-    background-color: #4d4848;
+    background-color:var( --grey-overlay);
     opacity: 0.6;
     transition: all ease-in-out 0.2s;
 }
@@ -174,7 +166,7 @@ header {
 
 .index-hotels-ville h3 {
 font-size: 4vmin;
-  color: #fdfbfb;
+  color:var( --index-hotels-ville);
   text-align: center;
   z-index: 100;
   transition: all ease-in-out 0.6s;
@@ -200,16 +192,16 @@ font-size: 4vmin;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Add display flex */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+    box-shadow: 0 0 10px #0000001a;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 
   .container h2  {
     font: bold 40px/85px 'Satisfy', sans-serif;
-    color: #213160;
+    color:var(--index-destinations);
     text-align: center;
     padding: 40px 0;
     flex-basis: 100%;

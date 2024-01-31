@@ -17,18 +17,19 @@
     margin-top: 10px;
 }
 
-.B-lettre-logo {
-    color: #004aad;
+.B-lettre-logo ,  
+.J-lettre-logo {
     font-size: 35px;
     font-weight: bold;
-    font-family:Georgia, Times, 'Times New Roman', serif
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.B-lettre-logo {
+    color: var(--B-lettre-logo);
 }
 
 .J-lettre-logo {
-    color: #ff3131;
-    font-size: 35px;
-    font-weight: bold;
-    font-family:Georgia, Times, 'Times New Roman', serif
+    color: var(--J-lettre-logo);
 }
 
 .about-content {
@@ -38,7 +39,7 @@
     justify-content: space-between;
     width: 90%;
     margin-bottom: 20px;
-    overflow: hidden; /* Prevent text from expanding beyond the image */
+    overflow: hidden; 
 }
 
 
@@ -52,14 +53,14 @@
     width: 43%;
     font-size: 22px;
     line-height: 35px;
-    animation: slideInLeft 4s ease-in-out; /* Add animation for text */
+    animation: slideInLeft 4s ease-in-out;
 }
 
 .apropos-titre{
     font-size: 5vmin;
     text-align: center;
     margin-top: 50px;  
-    color: #0053a4;
+    color:var(--apropos-titre);
     font-family: 'Satisfy', sans-serif;
     letter-spacing: 10px;
     font-weight: bold;    
@@ -83,7 +84,7 @@
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(300px); /* Adjust the initial position based on your needs */
+        transform: translateX(300px); 
     }
     to {
         opacity: 1;
@@ -94,21 +95,21 @@
 /* Media query for small and medium screens */
 @media only screen and (max-width: 1024px) {
     .about-content {
-        flex-direction: column; /* Change flex direction to column */
-        align-items: center; /* Center content */
-        text-align: justify; /* Align text to the left */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: justify; 
     }
 
     .about-content img {
-        width: 95%; /* Adjusted image width */
-        max-width: 95%; /* Limit image width */
-        margin-bottom: 10px; /* Add margin below image */
-        animation: fadeInRight 4s ease-in-out; /* Add animation for image on small screens */
+        width: 95%; 
+        max-width: 95%;
+        margin-bottom: 10px; 
+        animation: fadeInRight 4s ease-in-out; 
     }
 
     .about-content p {
-        width: 90%; /* Adjusted text width */
-        animation: slideInLeft 4s ease-in-out; /* Add animation for text on small screens */
+        width: 90%; 
+        animation: slideInLeft 4s ease-in-out; 
     }
 
     .apropos-titre{

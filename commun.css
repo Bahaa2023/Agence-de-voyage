@@ -1,9 +1,28 @@
 :root {
-    --navbar-color:#000;
-    --navbar-color-hover:#004aad;
-    --main-text:#ffffff;
-    --quotes:#ff3131;
+    /*Index page*/
 
+    --quote:#ffe291; /*Page d'Accueil header*/
+    --header-content:#e4b4ae; /*Page d'Accueil header*/
+    --index-destinations:#213160; /*Page d'Accueil Nos destinations*/
+    --grey-overlay:#4d4848; /*Page d'Accueil Hotels recommandés*/
+    --index-hotels-ville: #fdfbfb; /*Page d'Accueil Hotels recommandés h3*/
+
+
+    /*A propos de nous page*/
+
+    --B-lettre-logo:#004aad;  /*couleur lettre B dans le text*/
+    --J-lettre-logo: #ff3131; /*couleur lettre J dans le text*/
+    --apropos-titre:#0053a4;  /*couleur de titre*/
+
+
+    /*Nos services Page*/
+    --nosservices-h1:#213160; 
+    --nosservices-navlinks:#ffffff;
+
+     /*contact Page*/
+
+    --contact-navlinks:#ffffff;
+    
 }
 body {
     font-family: Arial, sans-serif;
