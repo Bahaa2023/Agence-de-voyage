@@ -1,21 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 
-  .nav-links li a{
-    color:var(--contact-navlinks);
-    font-weight: bold;
-    font-size: 2.3vmin;
-   
-  }
-  .nav-links li a:hover{
-    color:var(--contact-navlinks);
-    font-size: 2.5vmin;
-    font-weight: bolder;
-    transition: 0.4s ease ;
-}
 form {
     width: 80%; /* Adjusted width for responsiveness */
     max-width: 800px; /* Limit maximum width */
@@ -86,8 +70,4 @@ iframe {
 
 .back-ground-image {
     background-image: url(images/background7.jpg);
-    height: calc(100vh - 200px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
