@@ -1,8 +1,7 @@
 :root {
     /*Index page*/
 
-    --quote:#ffe291; /*Page d'Accueil header*/
-    --header-content:#e4b4ae; /*Page d'Accueil header*/
+    --header-content:#fffbf1; /*Page d'Accueil header*/
     --index-destinations:#213160; /*Page d'Accueil Nos destinations*/
     --grey-overlay:#4d4848; /*Page d'Accueil Hotels recommandés*/
     --index-hotels-ville: #fdfbfb; /*Page d'Accueil Hotels recommandés h3*/

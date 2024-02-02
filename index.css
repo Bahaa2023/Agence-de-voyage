@@ -21,7 +21,7 @@ header {
 }
 
 .header-content  p{ 
-  color: var( --quote); 
+  color: var( --header-content); 
 }
 
 .header-content h1
@@ -46,7 +46,7 @@ header {
     opacity: 0;
     transform: translateX(-100px);
     animation: dropAnimation 5s ease forwards;
-    font-size: 3vmin;
+    font-size: 4.5vmin;
 }
 
 @keyframes dropAnimation {
