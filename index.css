@@ -68,6 +68,13 @@ header {
 
 /* destinations */
 
+.index-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  text-align: center;
+}
+
 .index-destinations h2 {
     font: bold 40px/85px 'Satisfy', sans-serif;
     color:var(--index-destinations);
@@ -89,13 +96,6 @@ header {
 
   .index-destinations a:hover {
    text-decoration: none;
-  }
-  
-  .index-destinations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    text-align: center;
   }
   
   .index-destinations-box {
@@ -147,10 +147,11 @@ header {
     align-items: center;
     position: relative;
     margin-top: 10px;
+   
 }
 
 .index-hotels-ville:nth-child(2)  {
-    background-image:url(../images/Hotel\ Touraine\ Opera.jpg)
+    background-image:url(../images/Hotel\ Touraine\ Opera.jpg);
 }
 .index-hotels-ville:nth-child(3)  {
     background-image:url(../images/Cove\ Landmark\ Pinnacle.jpg)
@@ -169,11 +170,11 @@ header {
 }
 
 .grey-overlay {
-    position: absolute;
-    inset: 0;
-    background-color:var( --grey-overlay);
-    opacity: 0.6;
-    transition: all ease-in-out 0.2s;
+  position: absolute;
+  inset: 0;
+  background-color:var( --grey-overlay);
+  opacity: 0.6;
+  transition: all ease-in-out 0.2s;
 }
 
 .index-hotels-ville:hover .grey-overlay{
@@ -190,7 +191,7 @@ font-size: 4vmin;
 
 
 .index-hotels-ville:hover h3 {
-    opacity: 0;
+  opacity: 0;
 }
 
 
