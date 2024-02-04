@@ -93,10 +93,6 @@ header {
     font-weight: bold;
     font-size: 3vmin;
   }
-
-  .index-destinations a:hover {
-   text-decoration: none;
-  }
   
   .index-destinations-box {
     flex-basis: calc(33.33% - 10px);

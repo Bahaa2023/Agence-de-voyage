@@ -1,5 +1,15 @@
 .back-ground-image {
-    background-image: url(../images/voyagesbackground.jpg);  
+    background-image: url(../images/voyagesbackground.jpg); 
+}
+
+.apropos-titre{
+    font-size: 5vmin;
+    text-align: center;
+    margin-top: 50px;  
+    color:var(--apropos-titre);
+    font-family: 'Satisfy', sans-serif;
+    letter-spacing: 10px;
+    font-weight: bold;    
 }
 
 .about-section {
@@ -51,15 +61,7 @@
     animation: slideInLeft 4s ease-in-out;
 }
 
-.apropos-titre{
-    font-size: 5vmin;
-    text-align: center;
-    margin-top: 50px;  
-    color:var(--apropos-titre);
-    font-family: 'Satisfy', sans-serif;
-    letter-spacing: 10px;
-    font-weight: bold;    
-}
+
 
 .about-content:nth-child(even) {
     flex-direction: row-reverse;
