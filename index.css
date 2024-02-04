@@ -31,7 +31,6 @@ header {
     animation: dropAnimation 5s ease forwards;
     font-size: 7vmin;
     margin: 20px auto;
-
 }
 
 @keyframes dropAnimation {
@@ -45,11 +44,11 @@ header {
  {
     opacity: 0;
     transform: translateX(-100px);
-    animation: dropAnimation 5s ease forwards;
+    animation: slidein 5s ease forwards;
     font-size: 4.5vmin;
 }
 
-@keyframes dropAnimation {
+@keyframes slidein {
     to {
         opacity: 1;
         transform: translateX(0);
